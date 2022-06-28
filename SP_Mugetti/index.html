@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img src="./assets/logo.png" class="logo"></img>
+            <ul id="botonesHeader">
+
+                <li> <a href="anuncios.html" class="nav-enlace nav-desaparece">Inicio</a></li>
+                <li> <a href="anuncios.html" class="nav-enlace nav-desaparece">Nosotros</a></li>
+                <li> <a href="anuncios.html" class="nav-enlace nav-desaparece">Servicios</a></li>
+                <li> <a href="anuncios.html" class="nav-enlace nav-desaparece">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="divAll">
+
+        <div class="banner"></div>
+        <div class="principal" id="divPrincipal">
+            <div class="sombra">
+
+                <form name="formulario" class="container">
+                    <br><br>
+                    <fieldset class="fsFormulario">
+                        <legend class="tituloFormulario">Informacion Del Anuncio</legend>
+                        <div>
+                            <label for="" class="form-label">TITULO:</label>
+                        </div>
+                        <input type="text" class="form-control" name="Titulo" placeholder="Titulo" id="txtTitulo"
+                            required>
+                        <div>
+                            <br>
+                            <label for="" class="form-label">TRANSACCION:</label>
+                        </div>
+                        <input type="radio" name="Transaccion" id="transaccion" value="Venta" checked>Venta
+                        <input type="radio" name="Transaccion" id="transaccion" value="Alquiler">Alquiler
+                        <div>
+                            <br>
+                            <label for="" class="form-label">CARACTERISTICAS:</label>
+                        </div>
+                        <input type="checkbox" name="chkTurbo" id="chkTurbo" value="Turbo">Turbo
+                        <input type="checkbox" name="chkAleron" id="chkAleron" value="Aleron">Aleron
+                        <input type="checkbox" name="chkNeon" id="chkNeon" value="Neon">Neon
+                        <br><br>
+                        <label for="" class="form-label">DESCRIPCION:</label>
+                        <input type="text" class="form-control" name="Descripcion" placeholder="Descripcion"
+                            id="txtDescripcion" required>
+                        <div>
+                            <br>
+                            <label for="" class="form-label">PRECIO:</label>
+                        </div>
+                        <input type="number" class="form-control" name="Precio" placeholder="Precio" id="txtPrecio"
+                            required>
+                        <div>
+                            <br>
+                            <label for="" class="form-label">POTENCIA:</label>
+                            <input type="number" class="form-control" name="Potencia" placeholder="Potencia"
+                                id="txtPotencia" required>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="" class="form-label">KILOMETROS:</label>
+                            <input type="number" class="form-control" name="Kms" placeholder="Cantidad de kilometros"
+                                id="txtKms" required>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="" class="form-label">PUERTAS:</label>
+                            <input type="number" class="form-control" name="Puertas" placeholder="Cantidad de puertas"
+                                id="txtPuertas" required>
+                        </div>
+
+                        <div>
+                            <br>
+                            <input type="hidden" name="id" value="">
+                            <input type="submit" class="btn btn-success" value="Guardar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+        </div>
+        <center>
+            <div class="spinner"></div>
+        </center>
+        <br>
+        <center>
+            
+            <div class="filtros" id="divFiltros">
+                <div class="botones" id="botonera" hidden>
+                    <button type="button" class="btn btn-danger" id="btnEliminar">Eliminar</button>
+                    <button type="button" class="btn btn-secondary" id="btnCancelar">Cancelar</button>
+                    <button type="button" class="btn btn-warning" id="btnModificar">Modificar</button>
+                </div>
+                <br>
+                <div id="Informacion">
+                        <label for="" class="lblDatosFiltro">Filtrar:</label>
+                        <br>
+                        <label for="" class="lblDatosFiltro">Transaccion</label>
+                        <select id="cmbTransaccion" aria-label="Default select example">
+                            <option value=Todo>N/A</option>
+                            <option value=Alquiler>Alquiler</option>
+                            <option value=Venta>Venta</option>
+                        </select>
+                        <label for="" class="lblDatosFiltro">Promedio:</label>
+                        <input type="text" class="CamposDatosFiltro" name="Descripcion" onchange="" value="0"
+                        placeholder="Promedio" id="txtPromedio">
+                        <button type="button" class="btn btn-dark" id="btnBuscar">Buscar</button>
+                        <div>
+                            <br>
+                            <div>
+                                <div class="container-checkbox-campos-tabla">
+                                    <input value="0" class="checkbox-table" id="checkbox-titulo" type="checkbox"
+                                    checked />Titulo
+                                    <input value="1" class="checkbox-table" id="checkbox-tipo" type="checkbox"
+                                    checked />Transaccion
+                                    <input value="2" class="checkbox-table" id="checkbox-descripcion" type="checkbox"
+                                    checked />Descripcion
+                                    <input value="3" class="checkbox-table" id="checkbox-precio" type="checkbox"
+                                    checked />Precio
+                                    <input value="4" class="checkbox-table" id="checkbox-puertas" type="checkbox"
+                                    checked />Puertas
+                                    <input value="5" class="checkbox-table" id="checkbox-kilometros" type="checkbox"
+                                    checked />Potencia
+                                <input value="6" class="checkbox-table" id="checkbox-potencia" type="checkbox"
+                                checked />Kms
+                                <input value="7" class="checkbox-table" id="checkbox-caracteristicas" type="checkbox"
+                                checked />Caracteristicas
+                            </div>
+                            <main class="tabla">
+                                <div hidden class="table-container" id="table-container"></div>
+                            </main>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        <footer>
+            <div class="box footerNav">
+                <div class="linksFooter">Nosotros</div>
+                <div class="linksFooter">Anuncios</div>
+                <div class="linksFooter">Blog</div>
+                <div class="linksFooter">Contacto</div>
+            </div>
+        </footer>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="./scripts/app.js" type="module"></script>
+</body>
+
+</html>

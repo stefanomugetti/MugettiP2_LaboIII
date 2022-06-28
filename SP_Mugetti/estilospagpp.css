@@ -1,0 +1,149 @@
+.text-center {
+  text-align: center;
+}
+.footer-links {
+  list-style-type: none;
+  display: inline-block !important;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: block !important;
+  text-decoration: none;
+  background-color: black !important;
+  color: white;
+}
+
+.linksFooter {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.box {
+  display: flex;
+}
+
+.navegacion {
+  margin-left: 1000px;
+  margin-top: 5px;
+}
+.link {
+  color: white;
+  margin-left: 1000px;
+  margin-top: 5px;
+}
+
+body {
+  background-image: url(./assets/fondo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --azul-oscuro: #333a56;
+  --azul-claro: #52658f;
+  --gris: #e8e8e8;
+  --beige: #f7f5e6;
+}
+
+.card {
+  height: 210px;
+  width: 280px;
+  margin-bottom: 5px;
+  padding-bottom: 50px;
+  color: black;
+  background-color: white;
+  border-width: 10px;
+  border-color: black;
+  margin-left: 5px;
+  border-radius: 10px;
+  display: block;
+  background-color: blanchedalmond;
+}
+.card--text {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+}
+.card--button {
+  width: 90%;
+}
+.card--button:hover {
+  background-color: blanchedalmond;
+}
+@media (max-width: 1200px) {
+  body {
+    background-repeat: repeat;
+  }
+  @media (max-width: 500px) {
+    .logo {
+      display: none !important;
+    }
+  }
+}
+.nav-enlace-footer {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 10px;
+}
+#botonesHeader {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.nav-enlace {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  color: var(--gris);
+}
+nav {
+  padding: 10px;
+  /* background-color: var(--azul-claro); */
+  display: flex;
+  justify-content: right;
+}
+.nav-enlace:hover {
+  background: rgb(113, 18, 18);
+}
+
+.nav-menu {
+  display: none;
+  background: var(--azul-oscuro);
+  padding: 30px 30px 30px 30px;
+  border: #333a56;
+}
+.nav-menu:hover {
+  cursor: pointer;
+}
+
+.navegacion {
+  margin-left: 1000px;
+  margin-top: 5px;
+  background-color: #023466;
+  color: white;
+}
+
+nav {
+  background-color: #020810;
+  color: white;
+}
+.logo {
+  display: grid;
+  padding-left: 50px;
+  margin-right: auto;
+}
+
+header {
+  height: 28vh;
+}
+header > nav > ul {
+  height: 18vh;
+}

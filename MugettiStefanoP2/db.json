@@ -1,0 +1,58 @@
+{
+  "anuncios": [
+    {
+      "titulo": "asdasd",
+      "transaccion": "Venta",
+      "descripcion": "asdasd",
+      "precio": "123",
+      "puertas": "123",
+      "potencia": "123",
+      "kilometros": "123",
+      "caracteristicas": [
+        "Turbo",
+        "Aleron",
+        "Neon"
+      ],
+      "id": 1
+    },
+    {
+      "titulo": "eeeee",
+      "transaccion": "Alquiler",
+      "descripcion": "rrrrr",
+      "precio": 22,
+      "puertas": 555,
+      "potencia": 333,
+      "kilometros": 44,
+      "caracteristicas": [
+        "Turbo",
+        "Aleron"
+      ],
+      "id": 2
+    },
+    {
+      "titulo": "asdasd",
+      "transaccion": "Venta",
+      "descripcion": "asdasd",
+      "precio": 123,
+      "puertas": 123,
+      "potencia": 123,
+      "kilometros": 123,
+      "caracteristicas": [],
+      "id": 3
+    },
+    {
+      "titulo": "Titulo Final",
+      "transaccion": "Alquiler",
+      "descripcion": "Ahora acorte un poco",
+      "precio": "1500000",
+      "puertas": "4",
+      "potencia": "199",
+      "kilometros": "30050",
+      "caracteristicas": [
+        "Turbo",
+        "Aleron"
+      ],
+      "id": 4
+    }
+  ]
+}
